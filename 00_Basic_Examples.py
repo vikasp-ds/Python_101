@@ -38,3 +38,56 @@ for x in range(6):
     print(x)
 else:
     print('Finally finished')
+
+# Q. Find the area of the triangle if sides are given	
+#If a, b and c are three sides of a triangle. Then,
+#s = (a+b+c)/2
+#area = √(s(s-a)*(s-b)*(s-c))
+
+# Python Program to find the area of triangle
+# Sides
+a = 5
+b = 6
+c = 7
+
+# Uncomment below to take inputs from the user
+# a = float(input('Enter first side: '))
+# b = float(input('Enter second side: '))
+# c = float(input('Enter third side: '))
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)
+
+# Q. Python Program to Convert Kilometers to Miles
+kilometers = 5.5
+
+# To take kilometers from the user, uncomment the code below
+# kilometers = float(input("Enter value in kilometers"))
+
+# conversion factor
+conv_fac = 0.621371
+
+# calculate miles
+miles = kilometers * conv_fac
+print('%0.3f kilometers is equal to %0.3f miles' %(kilometers,miles))
+
+# Q. Program to find the sum of all numbers stored in a list
+
+# List of numbers
+numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+
+# variable to store the sum
+sum = 0
+
+# iterate over the list
+for val in numbers:
+	sum = sum+val
+
+# Output: The sum is 48
+print("The sum is", sum)
+
+
